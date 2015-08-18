@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="div" onmouseover="onOver(this)" onmouseout="onOut(this)"></div>
+    <script>
+        <!-- 鼠标滑动事件-->
+        function onOver (obj){
+            obj.innerHTML = "Picture";
+        }
+//        鼠标滑出事件
+        function onOut (obj) {
+            obj.innerHTML = "";
+        }
+    </script>
+
+
+    <form>
+        <input type="text" onchange="onChanged(this)">
+        <p id="pid"></p>
+    </form>
+
+    <script>
+        function onChanged(obj){
+            document.getElementById("pid").innerHTML=obj.value;
+        }
+    </script>
+</body>
+</html>
