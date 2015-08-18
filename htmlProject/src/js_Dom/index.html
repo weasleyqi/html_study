@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Dom</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p id="pid">Hello</p>
+    <a href="http://www.baidu.com" id="aid">baidu</a>
+    <button onclick="demo()">Click me</button>
+    <script>
+        function demo(){
+            document.getElementById("pid").innerHTML="World";
+            document.getElementById("aid").href="http://www.google.com";
+            document.getElementById("aid").innerText="Google";
+            document.getElementById("pid").style.color = "blue";
+        }
+    </script>
+
+    <!--句柄-->
+    <button id="btn">Click</button>
+    <script>
+        document.getElementById("btn").addEventListener("click",function(){
+            alert("hello, click");
+        });
+        document.getElementById("btn").addEventListener("click",f1);
+        document.getElementById("btn").addEventListener("click",f2);
+        function f1(){
+            alert("f1");
+        }
+        function f2(){
+            alert("f2");
+        }
+
+    </script>
+</body>
+</html>
