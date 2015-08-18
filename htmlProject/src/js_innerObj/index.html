@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        <!-- create object method1-->
+//        people = new Object();
+//        people.name = "weasley";
+//        people.age = 30;
+//        document.write("name"+people.name +"age:"+people.age);
+
+//        method 2
+//        people = {name:"weasley" , age:30};
+//        document.write("name"+people.name +"age:"+people.age);
+
+//        method 3
+        function people (name,age){
+            this.name = name;
+            this.age = age;
+        }
+        son = new people("weasley",30);
+        document.write("name"+son.name +"age:"+son.age);
+    </script>
+</body>
+</html>
