@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="div">
+        <button id="btn">Button</button>
+        <a href="http://www.baidu.com" id="aid">BaiDu</a>
+    </div>
+    <!--<script>-->
+        <!--var btn1 = document.getElementById("btn");-->
+        <!--btn1.onclick = function () {alert("hello Domo0")；}-->
+        <!--btn1.onclick = null;-->
+    <!--</script>-->
+    <!--<script>-->
+        <!--var btn1 = document.getElementById("btn");-->
+        <!--btn1.addEventListener("click",demo);-->
+        <!--btn1.addEventListener("click",demo1);-->
+        <!--btn1.addEventListener("click",demo2);-->
+        <!--function demo (){-->
+            <!--alert("DOMO1");-->
+        <!--}-->
+        <!--function demo1 (){-->
+            <!--alert("DOMO1");-->
+        <!--}-->
+        <!--function demo2 (){-->
+            <!--alert("DOMO1");-->
+        <!--}-->
+        <!--btn1.removeEventListener("click",demo1);-->
+    <!--</script>-->
+
+    <script>
+        document.getElementById("btn").addEventListener("click",showType);
+        document.getElementById("div").addEventListener("click",showDiv);
+        document.getElementById("aid").addEventListener("click",showA);
+        function showType(event){
+            alert(event.target);
+            event.stopPropagation();//阻止事件冒泡
+        }
+        function showDiv(){
+            alert("div");
+        }
+        function showA (e){
+//            e.stopPropagation();
+            e.preventDefault();//阻止默认行为
+        }
+    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@
 </head>
 <body>
     <script>
-        <!-- create object method1-->
+//        <!-- create object method1-->
 //        people = new Object();
 //        people.name = "weasley";
 //        people.age = 30;
@@ -17,12 +17,55 @@
 //        document.write("name"+people.name +"age:"+people.age);
 
 //        method 3
-        function people (name,age){
-            this.name = name;
-            this.age = age;
-        }
-        son = new people("weasley",30);
-        document.write("name"+son.name +"age:"+son.age);
+//        function people (name,age){
+//            this.name = name;
+//            this.age = age;
+//        }
+//        son = new people("weasley",30);
+//        document.write("name"+son.name +"age:"+son.age +"<br/>");
+
+        //date
+//        var date = new Date();
+//        document.write(date);
+//        document.write(date.getFullYear()+"<br>");
+//        date.setFullYear(2015,1,1);
+//        document.write(date);
+
+        //时钟
+//        function startTime(){
+//            var  today = new Date();
+//            var  h = today.getHours();
+//            var  m = today.getMinutes();
+//            var  s = today.getSeconds();
+//            m = checkTime(m);
+//            s = checkTime(s);
+//            document.getElementById("timeText").innerHTML = h+":"+m+":"+s;
+//            t = setTimeout( function () {
+//                startTime();
+//            }, 500);
+//        }
+//        function checkTime(t){
+//            if(t<10){
+//                t = "0"+ t;
+//            }
+//            return t;
+//        }
+
+        //array
+//        var a = ["hello","world"];
+//        var b = ["hi","apple"];
+//        var c = a.concat(b);
+//        document.write(c);
+//
+//        var a = ["1","4","3","2","5"];
+//        a.push("100");
+//        document.write(a.sort(function (a,b) {
+//            return b-a;
+//        }));
+
+        //Math
+        document.write(Math.round(3.1)+"<br/>");
+        document.write(parseInt(Math.random()*10));
     </script>
 </body>
 </html>
