@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <p id="pid">Hello</p>
+    <a id="aid" title="a title">aid</a>
+    <a id="aid2" title="a title">aid</a>
+    <script>
+        function getValue(){
+            var count = document.getElementsByName("pid");
+            alert(count.length);
+        }
+        function getAtt(){
+            var anode = document.getElementById("aid");
+            var att = anode.getAttribute("title");
+        }
+        function setAtt(){
+            var anode = document.getElementById("aid2");
+            anode.setAttribute("title","a title2");
+            var att = anode.getAttribute("title");
+            alert(att)
+        }
+        function createNode(){
+            var node = document.getElementById("pid");
+            var p = document.createElement("p");
+            p.innerHTML = "cate p ";
+            node.appendChild(p);
+        }
+    </script>
+</body>
+</html>
