@@ -3,7 +3,42 @@
  */
 window.onload = function () {
     imgLocation("container","box");
+
+    var imgData = {"data":[{"src":"1.jpg"},{"src":"2.jpg"},{"src":"3.jpg"},{"src":"4.jpg"},{"src":"5.jpg"},{"src":"6.jpg"}]};
+    window.onscroll = function (){
+        if (checkFlag()){
+            var cparent = document.getElementById("container");
+            for (var i = 0 ; i < imgData.data.length ; i++){
+                var ccontent = document.createElement("div");
+                ccontent.className = "box";
+                cparent.appendChild(ccontent);
+                var imgBox = document.createElement("div");
+                imgBox.className = "img_box";
+                ccontent.appendChild(imgBox);
+                var img = document.createElement("img");
+                img.src = "img/"+imgData.data[i].src;
+                imgBox.appendChild(img);
+            }
+            imgLocation("container","box");
+        }
+    }
+
 }
+
+function checkFlag (){
+    var cparent = document.getElementById("container");
+    var  ccontent = getChildElements(cparent,"box");
+    var lastContentHeight = ccontent[ccontent.length - 1].offsetTop;
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    var pageHeight = document.documentElement.clientHeight || document.body.clientHeight;
+
+    if (lastContentHeight < scrollTop + pageHeight){
+        return true;
+    }else {
+        return false;
+    }
+}
+
 
 function imgLocation(parent, content){
     var cparent = document.getElementById(parent);
