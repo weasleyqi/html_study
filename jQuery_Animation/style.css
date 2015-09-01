@@ -1,0 +1,8 @@
+div{
+    background-color: aqua;
+    width: 30px;
+    height: 20px;
+    border: 2px;
+    margin: 2px;
+    float: left;
+}

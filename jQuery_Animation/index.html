@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="index.js"></script>
+    <!--<link href="style.css" type="text/css" rel="stylesheet">-->
+    <!-- 滑动效果的style样式，就可以不用去写单独的css样式了-->
+    <style>
+        #div1,#div2,#div3 {
+            padding: 5px;
+            background-color: aqua;
+            border: solid 1px aqua;
+            text-align: center;
+        }
+        #div3{
+            height: 80px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+    //显示与隐藏
+    <p>This is a p</p>
+    <button id="bid">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">Toggle</button>
+
+    <br>
+    <br>
+    <script >
+        for (var i = 0; i <5 ; i++){
+            $("<div>").appendTo(document.body);//创建div
+        }
+        $("div").click(function () {
+            $(this).toggle(1000, function () {
+                $(this).remove();
+            });
+        })
+    </script>
+-->
+<!--
+    <p1>淡入淡出 fadein fadeout fadetoggle fadeto</p1>
+<br>
+    <button id="in">FadeIn</button>
+    <button id="out">FadeOut</button>
+    <button id="toggle">FadeToggle</button>
+    <button id="to">FadeTo</button>
+<br>
+    <div id="div1" style="width: 80px; height: 80px; display: none; background: cadetblue; margin: 3px; float: left;"></div>
+    <div id="div2" style="width: 80px; height: 80px; display: none; background: yellow; margin: 3px; float: left;"></div>
+    <div id="div3" style="width: 80px; height: 80px; display: none; background: aqua; margin: 3px; float: left;"></div>
+
+    -->
+
+    <h1>滑动效果 slideup slideDown</h1>
+
+    <div id="div1">Show</div>
+    <div id="div2">Hide</div>
+    <div id="div3">Content</div>
+</body>
+</html>
