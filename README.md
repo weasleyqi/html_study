@@ -49,4 +49,17 @@ This is some demos to learn html5&css&javascript&jQuery.
         	}
         })
 
-
+#jQuery Extends & noConflict
+	1、Extends
+		* define:
+		$.myjq = function () {
+    		alert("my Jq");
+		}
+		* use:
+		$.myjq();
+	2、noConflict
+		$.noConflict(); --> 使用完这个以后，$在jQuery中就失效了，需要使用jQuery代替$.
+		-----------------------
+		可以自定义一个变量来接收jQuery
+		var myJQ = $.noConflict();
+		以后就可以这样使用：myJQ(document).ready()
