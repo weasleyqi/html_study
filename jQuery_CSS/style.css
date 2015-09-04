@@ -1,0 +1,20 @@
+.style1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.style2{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+#div {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    padding: 50px;
+    border: 2px solid aqua;
+    background-color: antiquewhite;
+}

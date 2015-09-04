@@ -63,3 +63,20 @@ This is some demos to learn html5&css&javascript&jQuery.
 		可以自定义一个变量来接收jQuery
 		var myJQ = $.noConflict();
 		以后就可以这样使用：myJQ(document).ready()
+		
+#jQuery CSS
+	1、添加CSS
+		$("div").css("width","100px"); --> 比较麻烦，添加一个属性的时候比较方便
+		$("div").css({
+        	width:"100px",
+        	height:"100px",
+        	backgroundColor:"Red"
+        }); --> 添加多个属性的时候比较方便
+        $("div").addClass("style1");  -->添加一个css文件中的类
+        $(this).toggleClass("style2");
+    2、盒子模型（width一样）
+    	height：控件本身的高度
+    	innerHeight：控件高度＋内边距Padding，但是不包含border
+    	outerHeight：控件高度＋内边距Padding＋border；
+    	outerHeight(true)：控件高度＋内边距Padding＋border＋外边距margin；
+            
