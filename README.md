@@ -80,3 +80,28 @@ This is some demos to learn html5&css&javascript&jQuery.
     	outerHeight：控件高度＋内边距Padding＋border；
     	outerHeight(true)：控件高度＋内边距Padding＋border＋外边距margin；
             
+#jQuery Traversing
+	1、TraversingDown
+		children ： 只能找到该元素的下一级元素，不能找到全部元素
+		find ： find能找到该元素的所有子元素
+	2、TraversingUp
+		parent ： 只能向上查找一级父元素，不能找到全部元素
+		parents ： 查找所有父元素，可以传入参数查找某个父元素
+		parentsUntil ： 查找父元素区间
+	3、TraversingCurrent 同级遍历
+		siblings() 除当前元素外的所有同级元素
+		 next() 当前元素的下一个同级元素
+		 nextAll() 当前元素的下面的所有同级元素
+		 nextUntil() 向下元素区间
+		 prev() 当前元素的上一个同级元素
+		 prevAll() 当前元素的上面的所有同级元素
+		 prevUntil() 向上元素区间
+	4、遍历过滤
+		first() 同级第一个元素
+		last()	同级最后一个元素
+		eq(index) 同级第index个元素 
+		filter(c) 同级条件为c的元素集合 
+		not(c) 同级条件不为c的元素集合
+		
+#jQuery waterfall
+		对比js实现瀑布流和用jQuery实现的差异，jQuery实现起来比较的轻松，代码也很简洁。
