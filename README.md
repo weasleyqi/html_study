@@ -105,3 +105,15 @@ This is some demos to learn html5&css&javascript&jQuery.
 		
 #jQuery waterfall
 		对比js实现瀑布流和用jQuery实现的差异，jQuery实现起来比较的轻松，代码也很简洁。
+		
+#jQuery menu
+	垂直菜单
+		ulNode.toggle(C);//C：数字 slow normal fast
+	水平菜单
+		$(".hmain").hover(function () {
+        	$(this).children("ul").slideDown();
+        	changeIcon($(this).children("a"));
+    	}, function () {
+        	$(this).children("ul").slideUp();
+        	changeIcon($(this).children("a"));
+    	})
